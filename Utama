@@ -1,0 +1,2285 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="theme-color" content="#070e19">
+    <title>Talven Survival — Tvoj svijet. Tvoja priča.</title>
+    <meta name="description" content="Pridruži se Talven Survival Minecraft Java zajednici. Kopiraj play.talven.org, upoznaj rankove i poveži se s igračima na Discordu.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="hr_HR">
+    <meta property="og:title" content="Talven Survival">
+    <meta property="og:description" content="Tvoj svijet. Tvoja priča. Minecraft Java Survival na play.talven.org.">
+    <meta property="og:image" content="https://talven.org/assets/talven-logo.png">
+    <meta name="twitter:card" content="summary">
+    <link rel="icon" type="image/png" href="assets/talven-logo.png">
+    
+    <style>
+        /* vietnamese */
+        @font-face {
+          font-family: 'Barlow Condensed';
+          font-style: normal;
+          font-weight: 600;
+          font-display: swap;
+          src: url(https://fonts.gstatic.com/s/barlowcondensed/v13/HTxwL3I-JCGChYJ8VI-L6OO_au7B4873z3nWuZEC.woff2) format('woff2');
+          unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+        }
+        /* latin-ext */
+        @font-face {
+          font-family: 'Barlow Condensed';
+          font-style: normal;
+          font-weight: 600;
+          font-display: swap;
+          src: url(https://fonts.gstatic.com/s/barlowcondensed/v13/HTxwL3I-JCGChYJ8VI-L6OO_au7B4873z3jWuZEC.woff2) format('woff2');
+          unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+        }
+        /* latin */
+        @font-face {
+          font-family: 'Barlow Condensed';
+          font-style: normal;
+          font-weight: 600;
+          font-display: swap;
+          src: url(https://fonts.gstatic.com/s/barlowcondensed/v13/HTxwL3I-JCGChYJ8VI-L6OO_au7B4873z3bWuQ.woff2) format('woff2');
+          unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+        /* vietnamese */
+        @font-face {
+          font-family: 'Barlow Condensed';
+          font-style: normal;
+          font-weight: 700;
+          font-display: swap;
+          src: url(https://fonts.gstatic.com/s/barlowcondensed/v13/HTxwL3I-JCGChYJ8VI-L6OO_au7B46r2z3nWuZEC.woff2) format('woff2');
+          unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+        }
+        /* latin-ext */
+        @font-face {
+          font-family: 'Barlow Condensed';
+          font-style: normal;
+          font-weight: 700;
+          font-display: swap;
+          src: url(https://fonts.gstatic.com/s/barlowcondensed/v13/HTxwL3I-JCGChYJ8VI-L6OO_au7B46r2z3jWuZEC.woff2) format('woff2');
+          unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+        }
+        /* latin */
+        @font-face {
+          font-family: 'Barlow Condensed';
+          font-style: normal;
+          font-weight: 700;
+          font-display: swap;
+          src: url(https://fonts.gstatic.com/s/barlowcondensed/v13/HTxwL3I-JCGChYJ8VI-L6OO_au7B46r2z3bWuQ.woff2) format('woff2');
+          unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+        /* vietnamese */
+        @font-face {
+          font-family: 'Barlow Condensed';
+          font-style: normal;
+          font-weight: 800;
+          font-display: swap;
+          src: url(https://fonts.gstatic.com/s/barlowcondensed/v13/HTxwL3I-JCGChYJ8VI-L6OO_au7B47b1z3nWuZEC.woff2) format('woff2');
+          unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+        }
+        /* latin-ext */
+        @font-face {
+          font-family: 'Barlow Condensed';
+          font-style: normal;
+          font-weight: 800;
+          font-display: swap;
+          src: url(https://fonts.gstatic.com/s/barlowcondensed/v13/HTxwL3I-JCGChYJ8VI-L6OO_au7B47b1z3jWuZEC.woff2) format('woff2');
+          unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+        }
+        /* latin */
+        @font-face {
+          font-family: 'Barlow Condensed';
+          font-style: normal;
+          font-weight: 800;
+          font-display: swap;
+          src: url(https://fonts.gstatic.com/s/barlowcondensed/v13/HTxwL3I-JCGChYJ8VI-L6OO_au7B47b1z3bWuQ.woff2) format('woff2');
+          unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+        /* cyrillic-ext */
+        @font-face {
+          font-family: 'Manrope';
+          font-style: normal;
+          font-weight: 400;
+          font-display: swap;
+          src: url(https://fonts.gstatic.com/s/manrope/v20/xn7gYHE41ni1AdIRggqxSuXd.woff2) format('woff2');
+          unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+        }
+        /* cyrillic */
+        @font-face {
+          font-family: 'Manrope';
+          font-style: normal;
+          font-weight: 400;
+          font-display: swap;
+          src: url(https://fonts.gstatic.com/s/manrope/v20/xn7gYHE41ni1AdIRggOxSuXd.woff2) format('woff2');
+          unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+        }
+        /* greek */
+        @font-face {
+          font-family: 'Manrope';
+          font-style: normal;
+          font-weight: 400;
+          font-display: swap;
+          src: url(https://fonts.gstatic.com/s/manrope/v20/xn7gYHE41ni1AdIRggSxSuXd.woff2) format('woff2');
+          unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+        }
+        /* vietnamese */
+        @font-face {
+          font-family: 'Manrope';
+          font-style: normal;
+          font-weight: 400;
+          font-display: swap;
+          src: url(https://fonts.gstatic.com/s/manrope/v20/xn7gYHE41ni1AdIRggixSuXd.woff2) format('woff2');
+          unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+        }
+        /* latin-ext */
+        @font-face {
+          font-family: 'Manrope';
+          font-style: normal;
+          font-weight: 400;
+          font-display: swap;
+          src: url(https://fonts.gstatic.com/s/manrope/v20/xn7gYHE41ni1AdIRggmxSuXd.woff2) format('woff2');
+          unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+        }
+        /* latin */
+        @font-face {
+          font-family: 'Manrope';
+          font-style: normal;
+          font-weight: 400;
+          font-display: swap;
+          src: url(https://fonts.gstatic.com/s/manrope/v20/xn7gYHE41ni1AdIRggexSg.woff2) format('woff2');
+          unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+        /* cyrillic-ext */
+        @font-face {
+          font-family: 'Manrope';
+          font-style: normal;
+          font-weight: 500;
+          font-display: swap;
+          src: url(https://fonts.gstatic.com/s/manrope/v20/xn7gYHE41ni1AdIRggqxSuXd.woff2) format('woff2');
+          unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+        }
+        /* cyrillic */
+        @font-face {
+          font-family: 'Manrope';
+          font-style: normal;
+          font-weight: 500;
+          font-display: swap;
+          src: url(https://fonts.gstatic.com/s/manrope/v20/xn7gYHE41ni1AdIRggOxSuXd.woff2) format('woff2');
+          unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+        }
+        /* greek */
+        @font-face {
+          font-family: 'Manrope';
+          font-style: normal;
+          font-weight: 500;
+          font-display: swap;
+          src: url(https://fonts.gstatic.com/s/manrope/v20/xn7gYHE41ni1AdIRggSxSuXd.woff2) format('woff2');
+          unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+        }
+        /* vietnamese */
+        @font-face {
+          font-family: 'Manrope';
+          font-style: normal;
+          font-weight: 500;
+          font-display: swap;
+          src: url(https://fonts.gstatic.com/s/manrope/v20/xn7gYHE41ni1AdIRggixSuXd.woff2) format('woff2');
+          unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+        }
+        /* latin-ext */
+        @font-face {
+          font-family: 'Manrope';
+          font-style: normal;
+          font-weight: 500;
+          font-display: swap;
+          src: url(https://fonts.gstatic.com/s/manrope/v20/xn7gYHE41ni1AdIRggmxSuXd.woff2) format('woff2');
+          unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+        }
+        /* latin */
+        @font-face {
+          font-family: 'Manrope';
+          font-style: normal;
+          font-weight: 500;
+          font-display: swap;
+          src: url(https://fonts.gstatic.com/s/manrope/v20/xn7gYHE41ni1AdIRggexSg.woff2) format('woff2');
+          unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+        /* cyrillic-ext */
+        @font-face {
+          font-family: 'Manrope';
+          font-style: normal;
+          font-weight: 600;
+          font-display: swap;
+          src: url(https://fonts.gstatic.com/s/manrope/v20/xn7gYHE41ni1AdIRggqxSuXd.woff2) format('woff2');
+          unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+        }
+        /* cyrillic */
+        @font-face {
+          font-family: 'Manrope';
+          font-style: normal;
+          font-weight: 600;
+          font-display: swap;
+          src: url(https://fonts.gstatic.com/s/manrope/v20/xn7gYHE41ni1AdIRggOxSuXd.woff2) format('woff2');
+          unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+        }
+        /* greek */
+        @font-face {
+          font-family: 'Manrope';
+          font-style: normal;
+          font-weight: 600;
+          font-display: swap;
+          src: url(https://fonts.gstatic.com/s/manrope/v20/xn7gYHE41ni1AdIRggSxSuXd.woff2) format('woff2');
+          unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+        }
+        /* vietnamese */
+        @font-face {
+          font-family: 'Manrope';
+          font-style: normal;
+          font-weight: 600;
+          font-display: swap;
+          src: url(https://fonts.gstatic.com/s/manrope/v20/xn7gYHE41ni1AdIRggixSuXd.woff2) format('woff2');
+          unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+        }
+        /* latin-ext */
+        @font-face {
+          font-family: 'Manrope';
+          font-style: normal;
+          font-weight: 600;
+          font-display: swap;
+          src: url(https://fonts.gstatic.com/s/manrope/v20/xn7gYHE41ni1AdIRggmxSuXd.woff2) format('woff2');
+          unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+        }
+        /* latin */
+        @font-face {
+          font-family: 'Manrope';
+          font-style: normal;
+          font-weight: 600;
+          font-display: swap;
+          src: url(https://fonts.gstatic.com/s/manrope/v20/xn7gYHE41ni1AdIRggexSg.woff2) format('woff2');
+          unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+        /* cyrillic-ext */
+        @font-face {
+          font-family: 'Manrope';
+          font-style: normal;
+          font-weight: 700;
+          font-display: swap;
+          src: url(https://fonts.gstatic.com/s/manrope/v20/xn7gYHE41ni1AdIRggqxSuXd.woff2) format('woff2');
+          unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+        }
+        /* cyrillic */
+        @font-face {
+          font-family: 'Manrope';
+          font-style: normal;
+          font-weight: 700;
+          font-display: swap;
+          src: url(https://fonts.gstatic.com/s/manrope/v20/xn7gYHE41ni1AdIRggOxSuXd.woff2) format('woff2');
+          unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+        }
+        /* greek */
+        @font-face {
+          font-family: 'Manrope';
+          font-style: normal;
+          font-weight: 700;
+          font-display: swap;
+          src: url(https://fonts.gstatic.com/s/manrope/v20/xn7gYHE41ni1AdIRggSxSuXd.woff2) format('woff2');
+          unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+        }
+        /* vietnamese */
+        @font-face {
+          font-family: 'Manrope';
+          font-style: normal;
+          font-weight: 700;
+          font-display: swap;
+          src: url(https://fonts.gstatic.com/s/manrope/v20/xn7gYHE41ni1AdIRggixSuXd.woff2) format('woff2');
+          unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+        }
+        /* latin-ext */
+        @font-face {
+          font-family: 'Manrope';
+          font-style: normal;
+          font-weight: 700;
+          font-display: swap;
+          src: url(https://fonts.gstatic.com/s/manrope/v20/xn7gYHE41ni1AdIRggmxSuXd.woff2) format('woff2');
+          unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+        }
+        /* latin */
+        @font-face {
+          font-family: 'Manrope';
+          font-style: normal;
+          font-weight: 700;
+          font-display: swap;
+          src: url(https://fonts.gstatic.com/s/manrope/v20/xn7gYHE41ni1AdIRggexSg.woff2) format('woff2');
+          unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+        /* cyrillic-ext */
+        @font-face {
+          font-family: 'Manrope';
+          font-style: normal;
+          font-weight: 800;
+          font-display: swap;
+          src: url(https://fonts.gstatic.com/s/manrope/v20/xn7gYHE41ni1AdIRggqxSuXd.woff2) format('woff2');
+          unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+        }
+        /* cyrillic */
+        @font-face {
+          font-family: 'Manrope';
+          font-style: normal;
+          font-weight: 800;
+          font-display: swap;
+          src: url(https://fonts.gstatic.com/s/manrope/v20/xn7gYHE41ni1AdIRggOxSuXd.woff2) format('woff2');
+          unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+        }
+        /* greek */
+        @font-face {
+          font-family: 'Manrope';
+          font-style: normal;
+          font-weight: 800;
+          font-display: swap;
+          src: url(https://fonts.gstatic.com/s/manrope/v20/xn7gYHE41ni1AdIRggSxSuXd.woff2) format('woff2');
+          unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+        }
+        /* vietnamese */
+        @font-face {
+          font-family: 'Manrope';
+          font-style: normal;
+          font-weight: 800;
+          font-display: swap;
+          src: url(https://fonts.gstatic.com/s/manrope/v20/xn7gYHE41ni1AdIRggixSuXd.woff2) format('woff2');
+          unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+        }
+        /* latin-ext */
+        @font-face {
+          font-family: 'Manrope';
+          font-style: normal;
+          font-weight: 800;
+          font-display: swap;
+          src: url(https://fonts.gstatic.com/s/manrope/v20/xn7gYHE41ni1AdIRggmxSuXd.woff2) format('woff2');
+          unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+        }
+        /* latin */
+        @font-face {
+          font-family: 'Manrope';
+          font-style: normal;
+          font-weight: 800;
+          font-display: swap;
+          src: url(https://fonts.gstatic.com/s/manrope/v20/xn7gYHE41ni1AdIRggexSg.woff2) format('woff2');
+          unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap'); 
+        
+        :root {
+            color-scheme: dark;
+            --bg: #070e19;
+            --panel: #0c1727;
+            --ink: #f0f7ff;
+            --muted: #a0aec2;
+            --cyan: #5ce6ff;
+            --line: #223247;
+            --heading: 'Barlow Condensed','Arial Narrow',sans-serif
+        }
+
+        * {
+            box-sizing: border-box
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 100px
+        }
+
+        body {
+            margin: 0;
+            background: var(--bg);
+            color: var(--ink);
+            font: 16px/1.7 'Manrope',Arial,sans-serif
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none
+        }
+
+        button {
+            font: inherit;
+            cursor: pointer
+        }
+
+        button,a {
+            -webkit-tap-highlight-color: transparent
+        }
+
+        button:focus-visible,a:focus-visible {
+            outline: 3px solid var(--cyan);
+            outline-offset: 6px
+        }
+
+        img {
+            max-width: 100%;
+            display: block
+        }
+
+        .wrap {
+            width: min(1200px,calc(100% - 80px));
+            margin: auto
+        }
+
+        .skip {
+            position: fixed;
+            top: -100px;
+            left: 20px;
+            background: var(--cyan);
+            color: #071421;
+            padding: 12px;
+            z-index: 20
+        }
+
+        .skip:focus {
+            top: 12px
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 22px 40px;
+            border-bottom: 1px solid var(--line);
+            gap: 28px;
+            max-width: 1440px;
+            margin: auto
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 23px;
+            letter-spacing: .16em;
+            font-weight: 800;
+            line-height: 1.1
+        }
+
+        .brand img {
+            border-radius: 50%;
+            object-fit: cover
+        }
+
+        .brand small {
+            display: block;
+            font-size: 12px;
+            letter-spacing: .42em;
+            color: var(--muted);
+            margin-top: 8px
+        }
+
+        .header nav {
+            display: flex;
+            align-items: center;
+            gap: 27px;
+            font-size: 14px;
+            font-weight: 700
+        }
+
+        .header nav a:hover,.text-link:hover {
+            color: var(--cyan)
+        }
+
+        .nav-discord {
+            border: 1px solid #365269;
+            padding: 9px 17px
+        }
+
+        .menu-toggle {
+            display: none
+        }
+
+        .hero {
+            position: relative;
+            display: grid;
+            grid-template-columns: 1.08fr 1fr;
+            align-items: center;
+            min-height: 680px;
+            padding-top: 48px;
+            padding-bottom: 80px
+        }
+
+        .eyebrow {
+            font-size: 12px;
+            letter-spacing: .2em;
+            font-weight: 800;
+            color: var(--cyan);
+            margin: 0 0 24px;
+            display: flex;
+            align-items: center;
+            gap: 12px
+        }
+
+        .line {
+            width: 30px;
+            height: 1px;
+            background: var(--cyan)
+        }
+
+        h1,h2,h3,p {
+            margin-top: 0
+        }
+
+        h1,h2,h3 {
+            font-family: var(--heading);
+            line-height: 1.03;
+            font-weight: 700;
+            letter-spacing: -.015em
+        }
+
+        h1 {
+            font-size: clamp(64px,7.7vw,112px);
+            margin-bottom: 24px
+        }
+
+        em {
+            font-style: normal;
+            color: var(--cyan)
+        }
+
+        .lead {
+            color: var(--muted);
+            font-size: 18px;
+            line-height: 1.85
+        }
+
+        .hero-actions {
+            display: flex;
+            gap: 24px;
+            align-items: center;
+            margin: 30px 0
+        }
+
+        .button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 24px;
+            min-height: 52px;
+            padding: 14px 22px;
+            font-size: 14px;
+            font-weight: 800;
+            border: 1px solid transparent;
+            transition: background .2s,transform .2s
+        }
+
+        .button:hover {
+            transform: translateY(-2px)
+        }
+
+        .primary {
+            background: var(--cyan);
+            color: #061727;
+            box-shadow: 0 8px 35px #14bfe814
+        }
+
+        .primary:hover {
+            background: #a3f3ff
+        }
+
+        .secondary {
+            border-color: #486379;
+            background: #13273c;
+            color: #e8faff
+        }
+
+        .text-link {
+            font-size: 14px;
+            font-weight: 700
+        }
+
+        .copy-ip {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 24px;
+            padding: 16px 20px;
+            background: #0d1928;
+            border: 1px solid var(--line);
+            color: var(--ink);
+            text-align: left;
+            width: min(420px,100%)
+        }
+
+        .copy-ip:hover {
+            border-color: #54cce1
+        }
+
+        .copy-ip small {
+            display: block;
+            font-size: 12px;
+            letter-spacing: .17em;
+            color: var(--muted)
+        }
+
+        .copy-ip strong {
+            font-size: 20px;
+            font-weight: 600;
+            letter-spacing: .03em
+        }
+
+        .copy-label {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 12px;
+            color: var(--cyan)
+        }
+
+        .feedback {
+            height: 24px;
+            font-size: 13px;
+            color: var(--cyan);
+            margin: 8px 0 0
+        }
+
+        .hero-art {
+            position: relative;
+            text-align: center;
+            padding: 0 0 40px;
+            align-self: center
+        }
+
+        .hero-art img {
+            width: 100%;
+            height: auto;
+            mix-blend-mode: screen;
+            mask-image: radial-gradient(ellipse at center,#000 45%,transparent 72%)
+        }
+
+        .art-label {
+            position: absolute;
+            top: 1%;
+            left: 0;
+            right: 0;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: .45em;
+            color: #9ebbd0;
+            z-index: 1
+        }
+
+        .art-name {
+            font-family: var(--heading);
+            font-weight: 800;
+            font-size: 62px;
+            letter-spacing: .2em;
+            line-height: 1;
+            margin: -22px 0 0;
+            position: relative
+        }
+
+        .art-name span {
+            display: block;
+            font-family: 'Manrope',sans-serif;
+            font-size: 12px;
+            letter-spacing: .3em;
+            color: #a8dcea;
+            margin-top: 12px
+        }
+
+        .hero-bottom {
+            position: absolute;
+            bottom: 24px;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            font-size: 12px;
+            letter-spacing: .15em;
+            color: #8c9fb4
+        }
+
+        .hero-bottom a {
+            letter-spacing: .03em;
+            font-size: 13px
+        }
+
+        .hero-bottom a span {
+            color: var(--cyan);
+            margin-left: 12px
+        }
+
+        .status-bar {
+            border-top: 1px solid var(--line);
+            border-bottom: 1px solid var(--line);
+            background: #0a1422
+        }
+
+        .status-inner {
+            display: grid;
+            grid-template-columns: 1.3fr 1fr 1fr 1fr auto;
+            align-items: center;
+            gap: 24px;
+            padding: 25px 0 10px
+        }
+
+        .status-inner small {
+            display: block;
+            font-size: 12px;
+            letter-spacing: .12em;
+            color: #879cb4
+        }
+
+        .status-inner strong {
+            font-size: 16px;
+            font-weight: 600
+        }
+
+        .server-state {
+            display: flex;
+            align-items: center;
+            gap: 14px
+        }
+
+        .status-dot {
+            display: block;
+            width: 8px;
+            height: 8px;
+            background: #92a4b8;
+            border-radius: 50%
+        }
+
+        .status-dot.online {
+            background: #60e3ac;
+            box-shadow: 0 0 12px #60e3ac55
+        }
+
+        .status-dot.offline {
+            background: #ff9d82
+        }
+
+        .status-note {
+            font-size: 12px;
+            color: #8293a8;
+            margin-top: 0;
+            padding-bottom: 12px
+        }
+
+        .section {
+            padding: 100px 0
+        }
+
+        .section-heading {
+            display: flex;
+            justify-content: space-between;
+            align-items: end;
+            gap: 60px;
+            margin-bottom: 45px
+        }
+
+        .section-heading>p {
+            max-width: 360px;
+            margin-bottom: 5px;
+            color: var(--muted)
+        }
+
+        h2 {
+            font-size: clamp(42px,4.3vw,64px);
+            margin-bottom: 0
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            border-top: 1px solid var(--line);
+            border-bottom: 1px solid var(--line)
+        }
+
+        .features article {
+            padding: 32px 34px 30px 0
+        }
+
+        .features article+article {
+            padding-left: 34px;
+            border-left: 1px solid var(--line)
+        }
+
+        .feature-number {
+            font-family: var(--heading);
+            font-size: 20px;
+            color: #4bb9d5
+        }
+
+        .features h3 {
+            font-size: 32px;
+            margin: 24px 0 12px
+        }
+
+        .features p {
+            color: var(--muted);
+            margin-bottom: 0;
+            font-size: 15px
+        }
+
+        .play-section {
+            background: linear-gradient(115deg,#0c2335,#0b1523 70%);
+            border-block:1px solid var(--line);padding: 80px 0
+        }
+
+        .play-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 100px
+        }
+
+        .muted {
+            color: var(--muted);
+            max-width: 370px;
+            margin: 25px 0
+        }
+
+        .steps {
+            padding: 0;
+            margin: 0;
+            list-style: none
+        }
+
+        .steps li {
+            display: flex;
+            gap: 25px;
+            padding: 22px 0;
+            border-bottom: 1px solid #233c51
+        }
+
+        .steps li:first-child {
+            padding-top: 0
+        }
+
+        .steps li:last-child {
+            border-bottom: 0;
+            padding-bottom: 0
+        }
+
+        .steps li>span {
+            color: var(--cyan);
+            font-family: var(--heading);
+            font-size: 24px
+        }
+
+        .steps h3 {
+            font-size: 25px;
+            margin: 4px 0 10px
+        }
+
+        .steps p {
+            font-size: 14px;
+            color: var(--muted);
+            margin: 0
+        }
+
+        .steps strong,.steps a {
+            color: var(--ink)
+        }
+
+        .steps a {
+            text-decoration: underline;
+            text-underline-offset: 4px
+        }
+
+        .ranks {
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 16px
+        }
+
+        .rank {
+            padding: 28px 20px;
+            text-align: center;
+            background: linear-gradient(160deg,#132236,#0a1421);
+            border: 1px solid #253d52;
+            position: relative;
+            overflow: hidden
+        }
+
+        .rank-symbol {
+            font-family: var(--heading);
+            color: #82d6f0;
+            font-size: 65px;
+            line-height: 1.7;
+            letter-spacing: -.08em;
+            text-shadow: 0 0 35px #2ddfff33
+        }
+
+        .rank>span {
+            font-size: 12px;
+            letter-spacing: .24em;
+            color: #7793ac
+        }
+
+        .rank h3 {
+            font-size: 32px;
+            margin: 10px 0
+        }
+
+        .rank p {
+            font-size: 13px;
+            color: #91a5ba;
+            margin-bottom: 0
+        }
+
+        .rank.immortal {
+            border-color: #477b90;
+            background: linear-gradient(150deg,#183950,#0b1627)
+        }
+
+        .immortal .rank-symbol {
+            color: #b4f7ff
+        }
+
+        .free-ranks {
+            margin-top: 28px;
+            border-bottom: 1px solid var(--line);
+            padding-bottom: 30px;
+            display: flex;
+            align-items: center;
+            gap: 25px
+        }
+
+        .free-ranks>span {
+            font-size: 12px;
+            letter-spacing: .15em;
+            color: var(--cyan);
+            white-space: nowrap
+        }
+
+        .free-ranks p {
+            font-size: 13px;
+            color: #b4c3d3;
+            margin: 0
+        }
+
+        .free-ranks b {
+            padding: 0 9px;
+            font-weight: 400;
+            color: #405b73
+        }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 22px
+        }
+
+        .service-grid article {
+            border: 1px solid var(--line);
+            padding: 35px;
+            background: #0c1624
+        }
+
+        .badge {
+            display: inline-block;
+            font-size: 12px;
+            letter-spacing: .16em;
+            color: #a1b5c9;
+            border: 1px solid #334359;
+            padding: 4px 8px;
+            margin-bottom: 22px
+        }
+
+        .service-grid h2 {
+            font-size: 34px;
+            margin-bottom: 18px
+        }
+
+        .service-grid p {
+            color: var(--muted);
+            max-width: 420px;
+            font-size: 15px
+        }
+
+        .service-grid a {
+            color: var(--cyan)
+        }
+
+        .rules {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 100px;
+            padding: 100px 0
+        }
+
+        .rules p:not(.eyebrow) {
+            color: var(--muted)
+        }
+
+        .final-cta {
+            border-block:1px solid #244054;background: radial-gradient(ellipse at bottom,#123b56,transparent 70%),#0b1727;
+            text-align: center;
+            padding: 76px 0
+        }
+
+        .final-cta .eyebrow {
+            justify-content: center
+        }
+
+        .final-cta h2 {
+            font-size: clamp(50px,5vw,76px);
+            margin-bottom: 32px
+        }
+
+        .final-cta .button {
+            min-width: 260px
+        }
+
+        .final-cta p:last-child {
+            font-size: 13px;
+            letter-spacing: .08em;
+            color: var(--muted);
+            margin: 15px 0 0
+        }
+
+        footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 28px;
+            padding: 35px 0
+        }
+
+        footer p {
+            font-size: 12px;
+            color: #8192a8;
+            margin: 0
+        }
+
+        footer>a:last-child {
+            font-size: 13px;
+            color: #b9c9d8
+        }
+
+        .footer-brand {
+            font-family: var(--heading);
+            font-size: 28px;
+            font-weight: 700;
+            letter-spacing: .15em;
+            line-height: 1
+        }
+
+        .footer-brand span {
+            display: block;
+            font-family: 'Manrope',sans-serif;
+            font-size: 12px;
+            color: #87a0b8;
+            margin-top: 8px;
+            letter-spacing: .25em
+        }
+
+        .toast {
+            position: fixed;
+            left: 50%;
+            bottom: 24px;
+            transform: translateX(-50%);
+            background: #e5fbff;
+            color: #072033;
+            padding: 14px 24px;
+            box-shadow: 0 5px 40px #0008;
+            font-size: 14px;
+            z-index: 30;
+            text-align: center;
+            width: max-content;
+            max-width: 90%
+        }
+
+        .toast[hidden] {
+            display: none
+        }
+
+        @media(min-width: 1450px) {
+            .hero {
+                min-height:750px
+            }
+        }
+
+        @media(max-width: 1050px) {
+            .header {
+                padding:18px 26px
+            }
+
+            .header nav {
+                gap: 15px;
+                font-size: 13px
+            }
+
+            .wrap {
+                width: calc(100% - 52px)
+            }
+
+            .hero-actions {
+                gap: 18px;
+                flex-wrap: wrap
+            }
+
+            .hero {
+                min-height: 620px
+            }
+
+            .status-inner {
+                grid-template-columns: 1.2fr 1fr 1fr
+            }
+
+            .status-inner>div:nth-child(4) {
+                display: none
+            }
+
+            .status-inner>a {
+                display: none
+            }
+
+            .play-grid,.rules {
+                gap: 50px
+            }
+
+            .art-name {
+                font-size: 48px
+            }
+
+            .section-heading {
+                gap: 35px
+            }
+        }
+
+        @media(max-width: 760px) {
+            html {
+                scroll-padding-top:20px
+            }
+
+            .header {
+                padding: 16px 22px;
+                flex-wrap: wrap
+            }
+
+            .brand {
+                font-size: 20px
+            }
+
+            .brand img {
+                width: 40px;
+                height: 40px
+            }
+
+            .menu-toggle {
+                display: flex;
+                gap: 12px;
+                align-items: center;
+                background: transparent;
+                border: 1px solid var(--line);
+                color: var(--ink);
+                padding: 8px 12px;
+                font-size: 13px
+            }
+
+            .header nav {
+                display: none;
+                flex-direction: column;
+                align-items: stretch;
+                width: 100%;
+                gap: 0
+            }
+
+            .header nav.open {
+                display: flex
+            }
+
+            .header nav a {
+                padding: 12px 4px;
+                border-top: 1px solid var(--line);
+                font-size: 15px
+            }
+
+            .header nav .nav-discord {
+                border: 0;
+                border-top: 1px solid var(--line)
+            }
+
+            .wrap {
+                width: calc(100% - 44px)
+            }
+
+            .hero {
+                padding-top: 42px;
+                padding-bottom: 60px;
+                grid-template-columns: 1fr;
+                min-height: auto
+            }
+
+            .hero-content {
+                z-index: 1
+            }
+
+            .hero h1 {
+                font-size: clamp(62px,14vw,96px)
+            }
+
+            .lead {
+                font-size: 16px
+            }
+
+            .hero-art {
+                width: min(440px,95%);
+                margin: -8px auto 0;
+                padding-bottom: 25px
+            }
+
+            .hero-art .art-label {
+                top: 5%
+            }
+
+            .art-name {
+                font-size: 48px
+            }
+
+            .hero-bottom {
+                font-size: 12px;
+                bottom: 18px
+            }
+
+            .hero-bottom a {
+                font-size: 12px
+            }
+
+            .status-inner {
+                grid-template-columns: 1.25fr 1fr;
+                gap: 14px;
+                padding-top: 21px
+            }
+
+            .status-inner>div:nth-child(3) {
+                display: none
+            }
+
+            .status-inner strong {
+                font-size: 14px
+            }
+
+            .status-note {
+                font-size: 12px
+            }
+
+            .section {
+                padding: 65px 0
+            }
+
+            .section-heading {
+                display: block;
+                margin-bottom: 28px
+            }
+
+            .section-heading>p {
+                margin-top: 24px;
+                font-size: 15px
+            }
+
+            .eyebrow {
+                font-size: 12px;
+                letter-spacing: .15em;
+                margin-bottom: 20px
+            }
+
+            .features {
+                grid-template-columns: 1fr
+            }
+
+            .features article,.features article+article {
+                padding: 24px 0;
+                border-left: 0
+            }
+
+            .features article+article {
+                border-top: 1px solid var(--line)
+            }
+
+            .features h3 {
+                margin-top: 10px
+            }
+
+            .feature-number {
+                float: right
+            }
+
+            .play-section {
+                padding: 55px 0
+            }
+
+            .play-grid,.rules {
+                grid-template-columns: 1fr;
+                gap: 40px
+            }
+
+            .ranks {
+                grid-template-columns: 1fr 1fr;
+                gap: 12px
+            }
+
+            .rank {
+                padding: 18px 10px
+            }
+
+            .rank h3 {
+                font-size: 27px
+            }
+
+            .rank-symbol {
+                font-size: 52px
+            }
+
+            .free-ranks {
+                display: block
+            }
+
+            .free-ranks p {
+                margin-top: 12px;
+                line-height: 2.1
+            }
+
+            .service-grid {
+                grid-template-columns: 1fr
+            }
+
+            .service-grid article {
+                padding: 27px
+            }
+
+            .rules {
+                padding: 65px 0
+            }
+
+            .final-cta {
+                padding: 60px 0
+            }
+
+            .final-cta h2 {
+                font-size: 52px
+            }
+
+            footer {
+                flex-wrap: wrap;
+                padding: 30px 0
+            }
+
+            footer>div {
+                order: 3;
+                width: 100%
+            }
+
+            .copy-ip {
+                max-width: 100%
+            }
+
+            .copy-ip strong {
+                font-size: 19px
+            }
+
+            .copy-label {
+                font-size: 12px
+            }
+
+            .hero-actions .text-link {
+                font-size: 13px
+            }
+        }
+
+        @media(prefers-reduced-motion:reduce) {
+            html {
+                scroll-behavior: auto
+            }
+
+            *,*::before,*::after {
+                transition: none!important;
+                animation: none!important
+            }
+        }
+
+        .world-gallery {
+            margin-top: 70px
+        }
+
+        .gallery-heading {
+            display: flex;
+            align-items: end;
+            justify-content: space-between;
+            gap: 30px;
+            margin-bottom: 25px
+        }
+
+        .gallery-heading h3 {
+            font-size: 36px;
+            margin: 0
+        }
+
+        .gallery-heading .eyebrow {
+            margin-bottom: 12px
+        }
+
+        .gallery-heading>p {
+            color: var(--muted);
+            font-size: 14px;
+            margin: 0
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(3,minmax(0,1fr));
+            gap: 20px
+        }
+
+        .gallery-grid figure {
+            margin: 0;
+            background: #0c1727;
+            border: 1px solid var(--line);
+            min-width: 0
+        }
+
+        .gallery-grid .gallery-main {
+            grid-column: 1/-1
+        }
+
+        .gallery-grid a {
+            display: block;
+            overflow: hidden
+        }
+
+        .gallery-grid img {
+            width: 100%;
+            height: auto;
+            aspect-ratio: 945/483;
+            object-fit: cover;
+            transition: transform .3s
+        }
+
+        .gallery-grid a:hover img {
+            transform: scale(1.025)
+        }
+
+        .gallery-main img {
+            aspect-ratio: 945/482
+        }
+
+        .gallery-grid figcaption {
+            padding: 18px 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 5px
+        }
+
+        .gallery-grid figcaption span {
+            font-size: 12px;
+            letter-spacing: .12em;
+            color: var(--cyan)
+        }
+
+        .gallery-grid figcaption strong {
+            font-family: var(--heading);
+            font-size: 25px;
+            font-weight: 600
+        }
+
+        .gallery-main figcaption {
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between
+        }
+
+        .gallery-main figcaption strong {
+            font-size: 28px
+        }
+
+        @media(max-width: 760px) {
+            .world-gallery {
+                margin-top:45px
+            }
+
+            .gallery-heading {
+                display: block
+            }
+
+            .gallery-heading h3 {
+                font-size: 30px
+            }
+
+            .gallery-heading>p {
+                margin-top: 15px
+            }
+
+            .gallery-grid {
+                grid-template-columns: 1fr;
+                gap: 20px
+            }
+
+            .gallery-main figcaption {
+                flex-direction: column;
+                align-items: start
+            }
+
+            .gallery-grid figcaption strong,.gallery-main figcaption strong {
+                font-size: 25px
+            }
+        }
+
+        .launch-banner {
+            padding: 15px 24px;
+            text-align: center;
+            background: #17112b;
+            border-bottom: 1px solid #453262;
+            font-size: 14px;
+            color: #ccc2e4
+        }
+
+        .launch-banner strong {
+            color: #cfa9ff;
+            margin-right: 12px
+        }
+
+        .launch-banner a {
+            color: #e5d5ff;
+            text-decoration: underline;
+            margin-left: 12px
+        }
+
+        .crystal-section {
+            padding: 90px 0;
+            background: radial-gradient(ellipse at 50% 25%,#2b154340,transparent 65%),#090f1d;
+            border-block:1px solid #302440
+        }
+
+        .crystal-section .eyebrow,.crystal-section h2 em {
+            color: #c495ff
+        }
+
+        .crystal-guide {
+            display: flex;
+            gap: 28px;
+            flex-wrap: wrap;
+            padding: 20px 0;
+            border-block:1px solid #342942;color: #b181ea;
+            font-size: 13px
+        }
+
+        .crystal-guide strong {
+            color: #c0b8cc;
+            margin-left: 10px;
+            font-weight: 500
+        }
+
+        .store-state {
+            font-size: 13px;
+            color: #bfb2d2;
+            margin: 24px 0
+        }
+
+        .crystal-grid {
+            display: grid;
+            grid-template-columns: repeat(3,minmax(0,1fr));
+            gap: 22px
+        }
+
+        .crystal-card {
+            border: 1px solid #3a2b4d;
+            background: linear-gradient(150deg,#1e1730,#101523);
+            padding: 24px;
+            text-align: center;
+            min-width: 0
+        }
+
+        .crystal-art {
+            height: 240px;
+            position: relative;
+            margin: 0 0 16px;
+            background: radial-gradient(ellipse,#7743b626,transparent 68%)
+        }
+
+        .crystal-art img {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: contain
+        }
+
+        .crystal-label {
+            font-size: 12px;
+            color: #b8a3d2;
+            letter-spacing: .09em;
+            margin-bottom: 8px
+        }
+
+        .crystal-card h3 {
+            font-size: 48px;
+            margin: 0 0 14px;
+            color: #f0e3ff
+        }
+
+        .crystal-card h3 span {
+            display: block;
+            font-family: 'Manrope',sans-serif;
+            font-size: 13px;
+            letter-spacing: .14em;
+            text-transform: uppercase;
+            margin-top: 10px;
+            color: #ba97e4
+        }
+
+        .crystal-price {
+            font-size: 25px;
+            font-weight: 800;
+            margin: 0 0 20px
+        }
+
+        .crystal-price small {
+            display: block;
+            font-size: 11px;
+            letter-spacing: .04em;
+            color: #94889f;
+            font-weight: 500
+        }
+
+        .crystal-buy {
+            width: 100%;
+            color: #e9d5ff;
+            background: #6f37ab;
+            border: 1px solid #a96dde
+        }
+
+        .crystal-buy:disabled {
+            background: #2c203d;
+            color: #b5a6c7;
+            border-color: #48315f;
+            cursor: default;
+            transform: none
+        }
+
+        .crystal-note {
+            display: flex;
+            justify-content: space-between;
+            gap: 36px;
+            font-size: 12px;
+            margin-top: 28px;
+            color: #a494b6
+        }
+
+        .crystal-note p {
+            max-width: 690px;
+            margin: 0
+        }
+
+        .crystal-note a {
+            color: #d1b6f0;
+            white-space: nowrap
+        }
+
+        .vote-section {
+            padding-top: 60px
+        }
+
+        .vote-section article {
+            grid-column: 1/-1
+        }
+
+        @media(max-width: 1000px) {
+            .crystal-grid {
+                grid-template-columns:repeat(2,minmax(0,1fr))
+            }
+
+            .crystal-art {
+                height: 230px
+            }
+
+            .crystal-note {
+                flex-direction: column;
+                gap: 12px
+            }
+        }
+
+        @media(max-width: 560px) {
+            .crystal-section {
+                padding:60px 0
+            }
+
+            .crystal-grid {
+                grid-template-columns: 1fr;
+                gap: 18px
+            }
+
+            .crystal-art {
+                height: 260px
+            }
+
+            .crystal-card {
+                padding: 24px
+            }
+
+            .crystal-guide {
+                display: grid;
+                gap: 10px
+            }
+
+            .launch-banner {
+                padding: 14px 22px
+            }
+
+            .launch-banner strong,.launch-banner a {
+                display: block;
+                margin: 0
+            }
+
+            .crystal-card h3 {
+                font-size: 48px
+            }
+        }
+
+        .vote-section a.button.primary {
+            color: #061727
+        }
+
+        .vote-section p {
+            max-width: 760px
+        }
+
+        .vote-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 24px
+        }
+
+        .vote-links .button {
+            font-size: 13px;
+            text-align: center;
+            min-width: 180px
+        }
+    </style>
+</head>
+<body>
+    <a class="skip" href="#sadrzaj">Preskoči na sadržaj</a>
+    <header class="header">
+        <a class="brand" href="#pocetna" aria-label="Talven početna">
+            <img src="assets/talven-logo.png" width="48" height="48" alt="">
+            <span>
+                TALVEN<small>SURVIVAL</small>
+            </span>
+        </a>
+        <button class="menu-toggle" aria-expanded="false" aria-controls="navigation">
+            Izbornik <span aria-hidden="true">☰</span>
+        </button>
+        <nav id="navigation" aria-label="Glavni izbornik">
+            <a href="#pocetna">Početna</a>
+            <a href="#igraj">Igraj</a>
+            <a href="#rankovi">Rankovi</a>
+            <a href="#trgovina">Trgovina</a>
+            <a href="#glasanje">Glasanje</a>
+            <a href="#pravila">Pravila</a>
+            <a class="nav-discord" href="https://discord.talven.org/" target="_blank" rel="noopener noreferrer">
+                Discord <span aria-hidden="true">↗</span>
+            </a>
+        </nav>
+    </header>
+    <main id="sadrzaj">
+        <aside class="launch-banner">
+            <strong>Otvorenje uskoro!</strong>
+            Radovi na serveru su u tijeku. <a href="https://discord.talven.org/" target="_blank" rel="noopener noreferrer">Prati novosti na Discordu ↗</a>
+        </aside>
+        <section class="hero wrap" id="pocetna">
+            <div class="hero-content">
+                <p class="eyebrow">
+                    <span class="line"></span>
+                    MINECRAFT JAVA · SURVIVAL
+                </p>
+                <h1>
+                    Tvoj svijet.<br>
+                    Tvoja <em>priča.</em>
+                </h1>
+                <p class="lead">
+                    Od prvog skloništa do vlastitog kraljevstva.<br>Pronađi svoje mjesto na Talvenu.
+                </p>
+                <div class="hero-actions">
+                    <a class="button primary" href="#igraj">
+                        Kreni u avanturu <span aria-hidden="true">↗</span>
+                    </a>
+                    <a class="text-link" href="https://discord.talven.org/" target="_blank" rel="noopener noreferrer">
+                        Upoznaj zajednicu <span aria-hidden="true">↗</span>
+                    </a>
+                </div>
+                <button class="copy-ip" data-copy aria-label="Kopiraj IP adresu play.talven.org">
+                    <span>
+                        <small>ADRESA SERVERA</small>
+                        <strong>play.talven.org</strong>
+                    </span>
+                    <span class="copy-label">
+                        Kopiraj IP 
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                            <rect x="8" y="8" width="12" height="13" rx="2"/>
+                            <path d="M16 8V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h3"/>
+                        </svg>
+                    </span>
+                </button>
+                <p id="copy-feedback" class="feedback" role="status" aria-live="polite"></p>
+            </div>
+            <div class="hero-art">
+                <span class="art-label">DOBRODOŠAO U</span>
+                <img src="assets/talven-logo.png" alt="Talven: svjetleći plavi T u kamenom krugu" width="1254" height="1254" fetchpriority="high">
+                <p class="art-name">
+                    TALVEN<span>S U R V I V A L</span>
+                </p>
+            </div>
+            <div class="hero-bottom">
+                <span>ISTRAŽUJ. GRADI. OSTAVI TRAG.</span>
+                <a href="#svijet" aria-label="Saznaj više o Talvenu">
+                    Otkrij Talven <span aria-hidden="true">↓</span>
+                </a>
+            </div>
+        </section>
+        <section class="status-bar" aria-label="Status servera">
+            <div class="wrap status-inner">
+                <div class="server-state">
+                    <span class="status-dot" id="status-dot"></span>
+                    <div>
+                        <small>TALVEN SURVIVAL</small>
+                        <strong id="server-status" role="status">Provjeravam status…</strong>
+                    </div>
+                </div>
+                <div>
+                    <small>IGRAČI NA MREŽI</small>
+                    <strong id="player-count">—</strong>
+                </div>
+                <div>
+                    <small>IZDANJE</small>
+                    <strong>Minecraft Java</strong>
+                </div>
+                <div>
+                    <small>NAČIN IGRE</small>
+                    <strong>Survival</strong>
+                </div>
+                <a href="#igraj" class="text-link">
+                    Kako se spojiti <span aria-hidden="true">↗</span>
+                </a>
+            </div>
+            <p class="status-note wrap" id="status-note">Status se dohvaća putem mcsrvstat.us.</p>
+        </section>
+        <section class="wrap section" id="svijet">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">01 / TVOJA SLJEDEĆA AVANTURA</p>
+                    <h2>
+                        Počni s malo.<br>
+                        Izgradi <em>nešto svoje.</em>
+                    </h2>
+                </div>
+                <p>Survival je bolji kad imaš s kim podijeliti otkriće, gradnju i plan za sljedeći dan.</p>
+            </div>
+            <div class="features">
+                <article>
+                    <span class="feature-number">01</span>
+                    <h3>Istražuj</h3>
+                    <p>Kreni dalje od poznatih staza. Pronađi mjesto koje ćeš pretvoriti u svoj dom.</p>
+                </article>
+                <article>
+                    <span class="feature-number">02</span>
+                    <h3>Gradi</h3>
+                    <p>Prvo sklonište, velika baza ili potpuno nova ideja. Ti biraš što dolazi sljedeće.</p>
+                </article>
+                <article>
+                    <span class="feature-number">03</span>
+                    <h3>Poveži se</h3>
+                    <p>Podijeli svoje projekte, pronađi društvo za igru i pridruži se razgovoru na Discordu.</p>
+                </article>
+            </div>
+            <div class="world-gallery" aria-labelledby="gallery-title">
+                <div class="gallery-heading">
+                    <div>
+                        <p class="eyebrow">POGLED U TALVEN</p>
+                        <h3 id="gallery-title">Mjesto gdje avantura počinje.</h3>
+                    </div>
+                    <p>
+                        Dvorac, gradske ulice i luka.<br>Upoznaj svijet prije prvog ulaska.
+                    </p>
+                </div>
+                <div class="gallery-grid">
+                    <figure class="gallery-main">
+                        <a href="assets/talven-dvorac.png" target="_blank" rel="noopener" aria-label="Otvori cijelu sliku dvorca">
+                            <img src="assets/talven-dvorac.png" alt="Talven dvorac s plavim tornjevima, planinama i kamenim mostom" width="945" height="482" loading="lazy" decoding="async">
+                        </a>
+                        <figcaption>
+                            <span>01 / DVORAC</span>
+                            <strong>Iza vrata novog svijeta</strong>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <a href="assets/talven-trg.png" target="_blank" rel="noopener" aria-label="Otvori cijelu sliku gradskog trga">
+                            <img src="assets/talven-trg.png" alt="Kameni gradski trg okružen drvenim kućama s cyan krovovima" width="945" height="481" loading="lazy" decoding="async">
+                        </a>
+                        <figcaption>
+                            <span>02 / GRADSKE ULICE</span>
+                            <strong>U srcu Talvena</strong>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <a href="assets/talven-luka.png" target="_blank" rel="noopener" aria-label="Otvori cijelu sliku luke">
+                            <img src="assets/talven-luka.png" alt="Brod s plavim jedrima uz drvenu obalu i grad u pozadini" width="945" height="483" loading="lazy" decoding="async">
+                        </a>
+                        <figcaption>
+                            <span>03 / LUKA</span>
+                            <strong>Horizont zove</strong>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <a href="assets/talven-pogled.png" target="_blank" rel="noopener" aria-label="Otvori cijeli pogled iz zraka">
+                            <img src="assets/talven-pogled.png" alt="Pogled iz zraka na kružni prostor sa stazama, zelenilom i kamenim građevinama" width="945" height="484" loading="lazy" decoding="async">
+                        </a>
+                        <figcaption>
+                            <span>04 / POGLED IZ ZRAKA</span>
+                            <strong>Nova perspektiva</strong>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+        <section class="play-section" id="igraj">
+            <div class="wrap play-grid">
+                <div>
+                    <p class="eyebrow">02 / PRIDRUŽI SE</p>
+                    <h2>
+                        Tri koraka.<br>
+                        <em>Novi početak.</em>
+                    </h2>
+                    <p class="muted">Igraš na Minecraft Java izdanju. Adresu unesi bez dodatnog porta.</p>
+                    <button class="button primary" data-copy>Kopiraj play.talven.org</button>
+                </div>
+                <ol class="steps">
+                    <li>
+                        <span>01</span>
+                        <div>
+                            <h3>Pokreni Minecraft Java</h3>
+                            <p id="version-help">Podržanu verziju provjeri u informacijama na našem Discordu.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span>02</span>
+                        <div>
+                            <h3>Dodaj Talven na popis servera</h3>
+                            <p>
+                                Odaberi Multiplayer → Add Server i unesi <strong>play.talven.org</strong>
+                                .
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <span>03</span>
+                        <div>
+                            <h3>Uđi u svoj novi svijet</h3>
+                            <p>
+                                Do otvorenja je pristup ograničen. Za datum otvorenja i aktualne informacije posjeti <a href="https://discord.talven.org/" target="_blank" rel="noopener noreferrer">Talven Discord</a>
+                                .
+                            </p>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+        </section>
+        <section class="wrap section" id="rankovi">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">03 / TALVEN RANKOVI</p>
+                    <h2>
+                        Ime koje <em>ostaje.</em>
+                    </h2>
+                </div>
+                <p>Rankove kupuješ Talven Kristalima u igri. Puna kupnja vrijedi 30 dana, a nadogradnja uz doplatu razlike zadržava postojeći datum isteka.</p>
+            </div>
+            <div class="ranks">
+                <article class="rank">
+                    <div class="rank-symbol" aria-hidden="true">I</div>
+                    <span>VANGUARD</span>
+                    <h3>Vanguard</h3>
+                    <p>750 Kristala · 30 dana</p>
+                </article>
+                <article class="rank">
+                    <div class="rank-symbol" aria-hidden="true">II</div>
+                    <span>WARLORD</span>
+                    <h3>Warlord</h3>
+                    <p>1.500 Kristala · 30 dana</p>
+                </article>
+                <article class="rank">
+                    <div class="rank-symbol" aria-hidden="true">III</div>
+                    <span>SOVEREIGN</span>
+                    <h3>Sovereign</h3>
+                    <p>2.500 Kristala · 30 dana</p>
+                </article>
+                <article class="rank immortal">
+                    <div class="rank-symbol" aria-hidden="true">IV</div>
+                    <span>IMMORTAL</span>
+                    <h3>Immortal</h3>
+                    <p>4.000 Kristala · 30 dana</p>
+                </article>
+            </div>
+            <div class="free-ranks">
+                <span>BESPLATNI RANKOVI</span>
+                <p>
+                    Wanderer <b>·</b>
+                    Scout <b>·</b>
+                    Explorer <b>·</b>
+                    Adventurer <b>·</b>
+                    Veteran <b>·</b>
+                    Elite <b>·</b>
+                    Master
+                </p>
+            </div>
+        </section>
+        <section class="crystal-section" id="trgovina">
+            <div class="wrap">
+                <div class="section-heading">
+                    <div>
+                        <p class="eyebrow">TALVEN TRGOVINA</p>
+                        <h2>
+                            Ljubičasti Kristali.<br>
+                            <em>Tvoj sljedeći izbor.</em>
+                        </h2>
+                    </div>
+                    <p>Od ranka do novog izgleda. Talven Kristale koristiš u igri za rankove, ključeve, posebne alate, zaštite i kozmetiku.</p>
+                </div>
+                <div class="crystal-guide">
+                    <span>
+                        01 <strong>Odaberi paket</strong>
+                    </span>
+                    <span>
+                        02 <strong>Unesi točan Minecraft nadimak</strong>
+                    </span>
+                    <span>
+                        03 <strong>Potroši Kristale u /shop</strong>
+                    </span>
+                </div>
+                <p class="store-state">
+                    Službeni webshop: <a href="https://shop.talven.org/" target="_blank" rel="noopener noreferrer">shop.talven.org ↗</a>
+                    . Za isporuku se prijavi na server, a stanje provjeri naredbom /kristali. Pristup serveru do otvorenja ostaje ograničen.
+                </p>
+                <div class="crystal-grid">
+                    <article class="crystal-card" data-package-id="7692166">
+                        <div class="crystal-art">
+                            <img src="assets/kristali-500.png" width="1280" height="1280" alt="Prvi korak: ljubičasti Talven Kristali" loading="lazy" decoding="async">
+                        </div>
+                        <p class="crystal-label">Prvi korak</p>
+                        <h3>
+                            500 <span>Kristala</span>
+                        </h3>
+                        <p class="crystal-price">
+                            4,99 € <small>PDV uključen</small>
+                        </p>
+                        <a class="button crystal-buy" href="https://shop.talven.org/package/7692166" target="_blank" rel="noopener noreferrer" aria-label="Kupi 500 Talven Kristala">Kupi Kristale ↗</a>
+                    </article>
+                    <article class="crystal-card" data-package-id="7692168">
+                        <div class="crystal-art">
+                            <img src="assets/kristali-1100.png" width="1280" height="1280" alt="Mala zaliha: ljubičasti Talven Kristali" loading="lazy" decoding="async">
+                        </div>
+                        <p class="crystal-label">Mala zaliha</p>
+                        <h3>
+                            1.100 <span>Kristala</span>
+                        </h3>
+                        <p class="crystal-price">
+                            9,99 € <small>PDV uključen</small>
+                        </p>
+                        <a class="button crystal-buy" href="https://shop.talven.org/package/7692168" target="_blank" rel="noopener noreferrer" aria-label="Kupi 1.100 Talven Kristala">Kupi Kristale ↗</a>
+                    </article>
+                    <article class="crystal-card" data-package-id="7692174">
+                        <div class="crystal-art">
+                            <img src="assets/kristali-2300.png" width="1280" height="1280" alt="Sve više mogućnosti: ljubičasti Talven Kristali" loading="lazy" decoding="async">
+                        </div>
+                        <p class="crystal-label">Sve više mogućnosti</p>
+                        <h3>
+                            2.300 <span>Kristala</span>
+                        </h3>
+                        <p class="crystal-price">
+                            19,99 € <small>PDV uključen</small>
+                        </p>
+                        <a class="button crystal-buy" href="https://shop.talven.org/package/7692174" target="_blank" rel="noopener noreferrer" aria-label="Kupi 2.300 Talven Kristala">Kupi Kristale ↗</a>
+                    </article>
+                    <article class="crystal-card" data-package-id="7692175">
+                        <div class="crystal-art">
+                            <img src="assets/kristali-3600.png" width="1280" height="1280" alt="Košarica Kristala: ljubičasti Talven Kristali" loading="lazy" decoding="async">
+                        </div>
+                        <p class="crystal-label">Košarica Kristala</p>
+                        <h3>
+                            3.600 <span>Kristala</span>
+                        </h3>
+                        <p class="crystal-price">
+                            29,99 € <small>PDV uključen</small>
+                        </p>
+                        <a class="button crystal-buy" href="https://shop.talven.org/package/7692175" target="_blank" rel="noopener noreferrer" aria-label="Kupi 3.600 Talven Kristala">Kupi Kristale ↗</a>
+                    </article>
+                    <article class="crystal-card" data-package-id="7692178">
+                        <div class="crystal-art">
+                            <img src="assets/kristali-6250.png" width="1280" height="1280" alt="Škrinja Kristala: ljubičasti Talven Kristali" loading="lazy" decoding="async">
+                        </div>
+                        <p class="crystal-label">Škrinja Kristala</p>
+                        <h3>
+                            6.250 <span>Kristala</span>
+                        </h3>
+                        <p class="crystal-price">
+                            49,99 € <small>PDV uključen</small>
+                        </p>
+                        <a class="button crystal-buy" href="https://shop.talven.org/package/7692178" target="_blank" rel="noopener noreferrer" aria-label="Kupi 6.250 Talven Kristala">Kupi Kristale ↗</a>
+                    </article>
+                    <article class="crystal-card" data-package-id="7692179">
+                        <div class="crystal-art">
+                            <img src="assets/kristali-13000.png" width="1280" height="1280" alt="Talven riznica: ljubičasti Talven Kristali" loading="lazy" decoding="async">
+                        </div>
+                        <p class="crystal-label">Talven riznica</p>
+                        <h3>
+                            13.000 <span>Kristala</span>
+                        </h3>
+                        <p class="crystal-price">
+                            99,99 € <small>PDV uključen</small>
+                        </p>
+                        <a class="button crystal-buy" href="https://shop.talven.org/package/7692179" target="_blank" rel="noopener noreferrer" aria-label="Kupi 13.000 Talven Kristala">Kupi Kristale ↗</a>
+                    </article>
+                </div>
+                <div class="crystal-note">
+                    <p>Prikazane cijene uključuju PDV. Kristali su virtualna valuta za Talven server; rankove i ostale predmete biraš zasebno u igri.</p>
+                    <a href="/cdn-cgi/l/email-protection#ef9f808b9d9c848eaf9b8e83998a81c1809d88">
+                        Podrška: <span class="__cf_email__" data-cfemail="70001f1402031b113004111c06151e5e1f0217">[email &#160;protected]</span>
+                        ↗
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="wrap service-grid vote-section">
+            <article id="glasanje">
+                <span class="badge">GLASAJ I OSVOJI</span>
+                <h2>Tvoj glas. Tvoja nagrada.</h2>
+                <p>
+                    Podrži Talven na glasačkim stranicama i za svaki valjani glas osvoji <strong>1 fizički VOTE Key</strong>
+                    . Upiši svoje točno Minecraft ime.
+                </p>
+                <p>
+                    Nagrada te čeka u igri nakon prijave. Ključ iskoristi na <strong>/warp Crates</strong>
+                    , a sve poveznice u igri otvori naredbom <strong>/vote</strong>
+                    ili <strong>/glasanje</strong>
+                    .
+                </p>
+                <div class="vote-links">
+                    <a href="https://minecraft-mp.com/server/365124/vote/" target="_blank" rel="noopener noreferrer" class="button primary">Minecraft-MP ↗</a>
+                    <a href="https://minecraftservers.org/vote/694415" target="_blank" rel="noopener noreferrer" class="button primary">MinecraftServers.org ↗</a>
+                    <a href="https://topminecraftservers.org/vote/44730" target="_blank" rel="noopener noreferrer" class="button primary">TopMinecraftServers ↗</a>
+                    <a href="https://topg.org/minecraft-servers/server-686980#vote" target="_blank" rel="noopener noreferrer" class="button primary">TopG ↗</a>
+                    <a href="https://minecraft-serverlist.com/server/6762/vote" target="_blank" rel="noopener noreferrer" class="button primary">Minecraft-ServerList.com ↗</a>
+                    <a href="https://minecraft.buzz/vote/talven" target="_blank" rel="noopener noreferrer" class="button primary">Minecraft.Buzz ↗</a>
+                    <a href="https://minecraft-bestservers.com/server/talven/vote" target="_blank" rel="noopener noreferrer" class="button primary">Minecraft-BestServers.com ↗</a>
+                    <a href="https://mcservertime.com/server-talven.2885/vote" target="_blank" rel="noopener noreferrer" class="button primary">MCServerTime ↗</a>
+                </div>
+            </article>
+        </section>
+        <section class="wrap rules" id="pravila">
+            <div>
+                <p class="eyebrow">04 / ZAJEDNICA</p>
+                <h2>
+                    Dobra igra počinje<br>
+                    <em>dobrom ekipom.</em>
+                </h2>
+            </div>
+            <div>
+                <p>Prije ulaska upoznaj pravila Talven zajednice. Aktualne informacije, pravila i podršku potraži na našem Discordu.</p>
+                <a class="button secondary" href="https://discord.talven.org/" target="_blank" rel="noopener noreferrer">Otvori Talven Discord ↗</a>
+            </div>
+        </section>
+        <section class="final-cta">
+            <div class="wrap">
+                <p class="eyebrow">TALVEN SURVIVAL</p>
+                <h2>
+                    Sljedeća priča<br>
+                    počinje <em>s tobom.</em>
+                </h2>
+                <button class="button primary" data-copy>
+                    Kopiraj IP i pridruži se <span aria-hidden="true">↗</span>
+                </button>
+                <p>play.talven.org</p>
+            </div>
+        </section>
+    </main>
+    <footer class="wrap">
+        <a href="#pocetna" class="footer-brand">
+            TALVEN<span>SURVIVAL</span>
+        </a>
+        <div>
+            <p>
+                © <span id="year">2026</span>
+                Talven Survival
+            </p>
+            <p>Talven nije službeni Minecraft proizvod i nije povezan s Mojangom ni Microsoftom.</p>
+        </div>
+        <a href="https://discord.talven.org/" target="_blank" rel="noopener noreferrer">Discord ↗</a>
+    </footer>
+    <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+    
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v4bc70e2c01a94c73b74392e4234840661791215815920" integrity="sha512-L0ha0OXavK/8okipN9F8BtP84dg9DUhPERbBXzwI6dgTA55d2+yweo3pn5CSFYs45/r8md2+xvUPtTdvTNRfjA==" data-cf-beacon='{"version":"2024.11.0","token":"ca0f0a90b977481fbd78e2f9c8cc0f76","r":1,"spa":2}' crossorigin="anonymous"></script>
+
+    <script>
+        'use strict';
+        const ip = 'play.talven.org';
+        const toast = document.querySelector('#toast');
+        let toastTimer;
+        
+        document.querySelectorAll('[data-copy]').forEach(button => button.addEventListener('click', async () => {
+          try {
+            await navigator.clipboard.writeText(ip);
+            toast.textContent = 'IP adresa je kopirana. Vidimo se na Talvenu!';
+          } catch {
+            toast.textContent = 'Kopiranje nije dostupno. Ručno kopiraj: ' + ip;
+          }
+          toast.hidden = false;
+          clearTimeout(toastTimer);
+          toastTimer = setTimeout(() => { toast.hidden = true; }, 5000);
+        }));
+        
+        const menu = document.querySelector('.menu-toggle');
+        const nav = document.querySelector('#navigation');
+        
+        menu.addEventListener('click', () => { 
+            const open = menu.getAttribute('aria-expanded') !== 'true'; 
+            menu.setAttribute('aria-expanded', String(open)); 
+            nav.classList.toggle('open', open); 
+        });
+        
+        nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { 
+            menu.setAttribute('aria-expanded', 'false'); 
+            nav.classList.remove('open'); 
+        }));
+        
+        document.addEventListener('keydown', e => { 
+            if(e.key === 'Escape') { 
+                nav.classList.remove('open'); 
+                menu.setAttribute('aria-expanded', 'false'); 
+            }
+        });
+        
+        document.querySelector('#year').textContent = new Date().getFullYear();
+        
+        async function refreshStatus() {
+          const label = document.querySelector('#server-status');
+          const count = document.querySelector('#player-count');
+          const dot = document.querySelector('#status-dot');
+          const note = document.querySelector('#status-note');
+          try {
+            const response = await fetch('https://api.mcsrvstat.us/3/' + ip, { signal: AbortSignal.timeout(10000) });
+            if (!response.ok) throw new Error('Status unavailable');
+            const data = await response.json();
+            if (typeof data.online !== 'boolean') throw new Error('Invalid status');
+            label.textContent = data.online ? 'Server je online' : 'Server je offline';
+            dot.className = 'status-dot ' + (data.online ? 'online' : 'offline');
+            count.textContent = data.online && Number.isFinite(data.players?.online) ? String(data.players.online) + (Number.isFinite(data.players.max) ? ' / ' + data.players.max : '') : '—';
+            note.textContent = 'Status putem mcsrvstat.us · podaci mogu kasniti do 5 minuta.';
+            if(data.online && typeof data.version === 'string') document.querySelector('#version-help').textContent = 'Server prijavljuje verziju ' + data.version + '. Za detalje kompatibilnosti pogledaj Discord.';
+          } catch {
+            label.textContent = 'Status trenutačno nedostupan';
+            count.textContent = '—'; dot.className = 'status-dot';
+            note.textContent = 'Provjera statusa nije uspjela. To ne znači da je server offline; pokušaj se spojiti u Minecraftu.';
+          }
+        }
+        
+        refreshStatus();
+        setInterval(() => { if(!document.hidden) refreshStatus(); }, 300000);
+    </script>
+</body>
+</html>
